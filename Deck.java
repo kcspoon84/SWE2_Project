@@ -136,7 +136,7 @@ public class Deck {
      // calls the make deck function and prints the the items in the stack to show the "Deck" is made
      public void printDeck(Deck A){
        
-         A.MakeDeck(A);
+         
         
             for(int i = 0; i < top; i++){
                a[i].printCard(); 
@@ -150,6 +150,8 @@ public class Deck {
     
     public static void main(String[] args) {
         Deck A = new Deck();
+        A.MakeDeck(A);
+        A.Shuffle();
         A.printDeck(A);
         
         
