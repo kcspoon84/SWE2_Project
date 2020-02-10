@@ -57,7 +57,7 @@ public class Deck {
     /**
      * Shuffles the deck.
     */
-    public void Shuffle(Deck A){
+    public void Shuffle(){
          
         
 	Random rgen = new Random();  		
