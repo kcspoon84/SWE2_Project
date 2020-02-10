@@ -150,9 +150,11 @@ public class Deck {
     
     public static void main(String[] args) {
         Deck A = new Deck();
+        Hand B = new Hand();
         A.MakeDeck(A);
         A.Shuffle();
-        A.printDeck(A);
+        B.DealHand(A);
+        B.PrintHand();
         
         
     }
