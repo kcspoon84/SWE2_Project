@@ -22,10 +22,12 @@ public class Hand {
     // testing to see if i moved cards from deck to hand correctly
     public void PrintHand(){
        
+          int count = 1;
           for(int j = 0; j < 2; j++){
-              System.out.println(Delt[j].getSuit());
-              System.out.println(Delt[j].getNumber());
               
+              System.out.println("Card " + count + ":");
+              System.out.println(Delt[j].getSuit());
+              count++;
               
           }
             
