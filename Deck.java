@@ -12,7 +12,7 @@ public class Deck {
 */
 
    
-    private static final int MAX = 52;
+    private static final int MAX = 53;
     private int top;
     public static int count = 0;
     private Card a[]= new Card[MAX];
@@ -62,7 +62,7 @@ public class Deck {
         
 	Random rgen = new Random();  		
  
-	for (int i=0; i<top; i++) {
+	for (int i=0; i<=top; i++) {
             int R = rgen.nextInt(top);
             Card temp = a[i];
             a[i] = a[R];
@@ -138,7 +138,7 @@ public class Deck {
        
          
         
-            for(int i = 0; i < top; i++){
+            for(int i = 0; i <= top; i++){
                a[i].printCard(); 
             }
         }
@@ -147,14 +147,18 @@ public class Deck {
         
         
     
-    
+    //more testing for the hand class
     public static void main(String[] args) {
         Deck A = new Deck();
-        Hand B = new Hand();
+        
+        Game C = new Game();
         A.MakeDeck(A);
         A.Shuffle();
-        B.DealHand(A);
-        B.PrintHand();
+        Hand Player = new Hand();
+        Hand Dealer = new Hand();
+        C.PlayGame(Player, Dealer, A);
+        
+        
         
         
     }
