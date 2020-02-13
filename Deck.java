@@ -148,20 +148,8 @@ public class Deck {
         
     
     //more testing for the hand class
-    public static void main(String[] args) {
-        Deck A = new Deck();
-        
-        Game C = new Game();
-        A.MakeDeck(A);
-        A.Shuffle();
-        Hand Player = new Hand();
-        Hand Dealer = new Hand();
-        C.PlayGame(Player, Dealer, A);
-        
-        
-        
-        
+   
     }
     
     
-}
+
