@@ -7,6 +7,7 @@ public class Hand {
     Card[] Delt = new Card[10];
     int Hc = 2; // starting hand count;
     int Dc = 1; // starting hand shown for dealer;
+    int Pc = 1; //starting hand shown for Player2;
     int CallCount = 0; // keeps track how many times handcount function has been called
    int count = 0;
     
@@ -47,11 +48,19 @@ public class Hand {
               
           }
             
-        
-          
-          
-    
-    
+   
+}
+    public void PrintHandPlayer2(){
+       
+        int count2 = 1;
+          for(int j = 0; j < Pc; j++){
+              
+              System.out.println("Card " + count2 + ":");
+              System.out.println(Delt[j].getSuit());
+              count2++;
+              
+              
+          }
     
 }
            public int getValue(int i){
