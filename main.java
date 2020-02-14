@@ -12,7 +12,8 @@ public class main {
         Hand Player = new Hand();
         Hand Dealer = new Hand();
         C.PlayGame(Player, Dealer, A);
-        
+        AddPlayer B = new AddPlayer();
+          B.PlayGame(Player,Player2,Dealer,A);
         
         
         
